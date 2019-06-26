@@ -53,7 +53,7 @@
           <table class="table table-hover mt-3">
             <thead>
               <tr>
-                <th scope="col" class="col-7"></th>
+                <th scope="col"></th>
                 <th scope="col" class="text-center">Ações</th>
               </tr>
             </thead>
@@ -61,8 +61,9 @@
               <tr>
                 <td>Eletrocardiograma</td>
                 <td class="text-center">
+                  <a href="form-prontuário.html" class="text-secondary"><i class="fas fa-edit"></i></a>
+                  <a href="#" class="text-secondary" data-toggle="modal" data-target=".upload-modal"><i class="fas fa-upload"></i></a>
                   <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
-                  <a href="#" class="text-secondary"><i class="fas fa-download"></i></a>
                 </td>
               </tr>                                                
             </tbody>
@@ -140,6 +141,22 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade upload-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">Arquivo adicionado!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> 
+          <div class="modal-footer">
+            <a href="listar-prontuarios.html" class="btn btn-secondary">Ok</a>
+          </div>                   
+        </div>
+      </div>
+    </div>    
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
