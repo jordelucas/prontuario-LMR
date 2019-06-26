@@ -45,67 +45,97 @@
               <td>Maria Mônica Oliveira Barros</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </i></a></td>
             </tr>
             <tr>
             <td>Elizabete Moreira</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </td>
               </tr>
             <tr>
               <td>Antônio Joaquim ribeiro</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </td>
             </tr>
             <tr>
             <td>Fernanda Kária de Albuquer</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </td>
             </tr>
             <tr>
             <td>Severino Trajano Vieira</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </td>
               </tr>
             <tr>
               <td>Maria Ribeiro Cruz</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </td>
             </tr>   
             <tr>
             <td>Antoni Miguel Santos</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </td>
             </tr>
             <tr>
             <td>Maria das Graças Santos Silva</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </td>
               </tr>
             <tr>
               <td>Maria das Dores Trajano Cruz</td>
               <td class="text-center">
                 <a href="#" class="text-secondary"><i class="fas fa-edit"></i></a>
-                <a href="#" class="text-secondary"><i class="far fa-trash-alt"></i></a>
+                <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
               </td>
             </tr>                                                   
           </tbody>
         </table>
+    </div>
+
+    <div class="modal fade confirmacao-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">Deseja exluir o prontuário?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" data-toggle="modal" data-target=".excluido-modal">Sim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade excluido-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">Prontuário excluído!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>          
+        </div>
+      </div>
     </div>
     
 
