@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e8fad70eea.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Prontuário Eletrônico</title>
+  </head>
+
+  <body style="height: 100vh">
+
+    <div class="container mt-5 mb-5">
+      <div class="row d-flex justify-content-center">
+        <h3 class="col-12 text-center">Prontuário Eletrônico</h3>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12">
+          <p class="mb-0">Dados do Paciente</p>
+          <hr class="mt-0">
+        </div>
+
+        <div class="col-12">
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="">Nome</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-6">
+              <label for="">CPF</label>
+              <input type="text" class="form-control">
+            </div>            
+          </div>
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="">Data de nascimento</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-6">
+              <label for="">E-mail</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="">Telefone</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-6">
+              <label for="">CEP</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="">Cidade</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-6">
+              <label for="">Bairro</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>          
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label for="">Rua</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-6">
+              <label for="">Complemento</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-row">
+            <form class="form-group">
+              <label for="exampleFormControlFile1">Foto</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </form>
+          </div>          
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-12">
+          <p class="mb-0">Dados do exame</p>
+          <hr class="mt-0">
+        </div>
+
+        <div class="col-12">
+          <div class="form-row">
+            <div class="form-group col-12">
+              <label for="">Nome</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-row">
+            <form class="form-group col-9">
+              <label for="exampleFormControlFile1">Arquivo</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </form>
+            <div class="form-group col-3 text-right">
+              <a href="#" class="btn btn-outline-secondary mt-4">Adicionar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-12">
+          <p class="mb-0">Arquivos adicionados</p>
+          <hr class="mt-0">
+        </div>
+
+        <div class="col-12">
+          <table class="table table-hover mt-3">
+            <thead>
+              <tr>
+                <th scope="col" class="col-7"></th>
+                <th scope="col" class="text-center">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Eletrocardiograma</td>
+                <td class="text-center">
+                  <a href="#" class="text-secondary" data-toggle="modal" data-target=".confirmacao-modal"><i class="far fa-trash-alt"></i></a>
+                </td>
+              </tr>                                                
+            </tbody>
+          </table>          
+        </div>
+      </div>
+
+      <div class="row d-flex mt-5 justify-content-end no-gutters">
+        <a href="#" class="btn btn-outline-secondary"  data-toggle="modal" data-target=".salvar-formulario-modal">Salvar</a>
+      </div>
+    </div>
+
+    <div class="modal fade confirmacao-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">Deseja exluir o arquivo?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" data-toggle="modal" data-target=".excluido-modal">Sim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade excluido-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">Arquivo excluído!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>          
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade salvar-formulario-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">Formulário salvo!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> 
+          <div class="modal-footer">
+            <a href="listar-prontuarios.html" class="btn btn-secondary">Ok</a>
+          </div>                   
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
