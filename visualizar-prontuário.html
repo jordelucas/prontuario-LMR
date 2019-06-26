@@ -18,105 +18,35 @@
   <body style="height: 100vh">
 
     <div class="container mt-5 mb-5">
-      <div class="row d-flex justify-content-center">
+      <div class="row no-gutters d-flex justify-content-center">
         <h3 class="col-12 text-center">Prontuário Eletrônico</h3>
       </div>
 
-      <div class="row mt-4">
-        <div class="col-12">
-          <strong class="mb-0">Dados do Paciente</strong>
-          <hr class="mt-0">
+      <div class="row no-gutters mt-4">
+        <div class="col-12 d-flex border-bottom mb-2">
+          <strong class="mb-0 text-left flex-grow-1">Dados do Paciente </strong>
+          <span class="mb-0 text-right"><a href="form-prontuário.html" class="text-secondary"><i class="fas fa-edit"></i></a></span>
         </div>
 
         <div class="col-12">
-          <div class="form-row">
-            <div class="form-group col-6">
-              <label for="">Nome</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-6">
-              <label for="">CPF</label>
-              <input type="text" class="form-control">
-            </div>            
-          </div>
-          <div class="form-row">
-            <div class="form-group col-6">
-              <label for="">Data de nascimento</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-6">
-              <label for="">E-mail</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-6">
-              <label for="">Telefone</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-6">
-              <label for="">CEP</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-6">
-              <label for="">Cidade</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-6">
-              <label for="">Bairro</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>          
-          <div class="form-row">
-            <div class="form-group col-6">
-              <label for="">Rua</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-6">
-              <label for="">Complemento</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="form-row">
-            <form class="form-group">
-              <label for="exampleFormControlFile1">Foto</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </form>
-          </div>          
+          <p class="mb-2"><label>Nome: </label>Maria Mônica Oliveira Barros</p>
+          <p class="mb-2"><label>CPF: </label>123.456.789-00</p>
+          <p class="mb-2"><label>Data de nascimento: </label>15/03/1973</p>
+          <p class="mb-2"><label>E-mail: </label></p>
+          <p class="mb-2"><label>Telefone: </label>(83) 99119-9119</p>
+          <p class="mb-2"><label>CEP: </label>59999-999</p>
+          <p class="mb-2"><label>Cidade: </label>Natal</p>
+          <p class="mb-2"><label>Bairro: </label>Capim Macio</p>
+          <p class="mb-2"><label>Rua: </label>São João</p>
+          <p class="mb-2"><label>Complemento: </label></p>
         </div>
       </div>
 
-      <div class="row mt-4">
-        <div class="col-12">
-          <strong class="mb-0">Dados do exame</strong>
-          <hr class="mt-0">
-        </div>
 
-        <div class="col-12">
-          <div class="form-row">
-            <div class="form-group col-12">
-              <label for="">Nome</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-          <div class="form-row">
-            <form class="form-group col-9">
-              <label for="exampleFormControlFile1">Arquivo</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </form>
-            <div class="form-group col-3 text-right">
-              <a href="#" class="btn btn-outline-secondary mt-4">Adicionar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-12">
-          <strong class="mb-0">Exames adicionados</strong>
-          <hr class="mt-0">
+      <div class="row no-gutters mt-4">
+        <div class="col-12 d-flex border-bottom mb-2">
+          <strong class="mb-0 text-left flex-grow-1">Exames adicionados </strong>
+          <span class="mb-0 text-right mx-2"><a href="form-prontuário.html" class="text-secondary"><i class="fas fa-plus-circle"></i></a></span>
         </div>
 
         <div class="col-12">
@@ -137,11 +67,31 @@
               </tr>                                                
             </tbody>
           </table>          
-        </div>
+        </div>  
+      </div>  
+      
+      <div class="row mt-4 no-gutters d-flex justify-content-center">
+        <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target=".intervalo-modal">Emitir relatório</a>
       </div>
+    </div>
 
-      <div class="row d-flex mt-5 justify-content-end no-gutters">
-        <a href="#" class="btn btn-outline-secondary"  data-toggle="modal" data-target=".salvar-formulario-modal">Salvar</a>
+    <div class="modal fade intervalo-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">Informe o intervalo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body d-flex">
+            <input type="text" class="form-control mx-4">
+            <input type="text" class="form-control mx-4">
+          </div>
+          <div class="modal-footer">
+            <a href="listar-prontuarios.html" class="btn btn-outline-secondary">Emitir</a>
+          </div>
+        </div>
       </div>
     </div>
 
